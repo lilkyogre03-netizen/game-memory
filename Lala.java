@@ -5,7 +5,8 @@ public class Lala {
         System.out.print(hitung);
 
         System.out.println("Jambi Butuk");
-
+        int l = 7;
+        boolean a = false;
         
     }
 }
