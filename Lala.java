@@ -3,6 +3,9 @@ public class Lala {
         int a = 2;
         int hitung = a * 2;
         System.out.print(hitung);
+
+        System.out.println("Jambi Butuk");
+
         
     }
 }
