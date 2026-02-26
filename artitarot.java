@@ -1,7 +1,7 @@
 class artitarot extends tarot {
     String arti;
 
-    public artitaro(String namakartu, String arti) {
+    public artitarot(String namakartu, String arti) {
         super(namakartu);
         this.arti = arti;
     }
