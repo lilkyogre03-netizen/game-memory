@@ -4,18 +4,14 @@ import java.util.Random;
 import java.util.ArrayList;
 
 public class main {
-
     public static void main(String[] args) {
-    Scanner s= new Scanner(System.in);
+    Scanner input = new Scanner(System.in);
  
         ArrayList<String> majorArcanapast = new ArrayList<>();
         ArrayList<String> majorArcanapresent = new ArrayList<>();
         ArrayList<String> majorArcanafuture = new ArrayList<>();
         ArrayList<String> NAMAARCANA = new ArrayList<>();
-        
-
-
-        
+        ArrayList<Integer> used = new ArrayList<>();
        
       // NAMA ARCANA
         NAMAARCANA.add("THE FOOL");
@@ -112,47 +108,60 @@ public class main {
         majorArcanafuture.add("fajar kemenangan yang akan segera menyinari harimu"); // THE SUN
         majorArcanafuture.add("panggilan takdir yang takkan bisa kau abaikan"); // JUDGEMENT
         majorArcanafuture.add("pencapaian tertinggi yang akan melengkapi jiwamu"); // THE WORLD        
-        Random r= new Random();
-        ;
+        Random r = new Random();
          
-        int lihat=3;      
-        System.out.println("selmat datang di ramalan tarot");
-        System.out.println("Sekarang saya ada 21 kartu dan anda akan memilih 3 secara acak \n nah anda mau melihat \n1.masa depan\n2.masa kini\n3.masa lampau?");
-        
-        do{
+        int lihat = 3;      
+        System.out.println("Selamat datang di Ramalan Kartu Karot");
+        System.out.println("Sekarang saya ada 22 kartu dan anda akan memilih 1 masing - masing dari setiap jenis kartu \nApa yang mau anda lihat? \n1. Masa lalu\n2. Masa kini\n3. Masa depan?");
+    
+    do{
  
-        int pil = s.nextInt();
+        int pilihan = input.nextInt();
         
-        switch (pil) {  
+        switch (pilihan) {  
             case 1:
-                int ran=r.nextInt(22);
+                int randomPast;
+                do {
+                    randomPast = r.nextInt(22);
+                }while (used.contains(randomPast));
+                used.add(randomPast);
                 System.out.println("MASA LALU MU MENGATAKAN :");
-                artitarot a= new artitarot(NAMAARCANA.get(ran),majorArcanapast.get(ran));
+                artitarot a= new artitarot(NAMAARCANA.get(randomPast),majorArcanapast.get(randomPast));
                 a.showkartu();
                 lihat--;
                 
                 break;
             case 2:
-                int rran=r.nextInt(22);
+                int randomPresent;
+                do {
+                    randomPresent = r.nextInt(22);
+                }while (used.contains(randomPresent));
+                used.add(randomPresent);
                 System.out.println("MASA KINI MU MENGATAKAN");
-                artitarot b= new artitarot(NAMAARCANA.get(rran),majorArcanapresent.get(rran));
+                artitarot b= new artitarot(NAMAARCANA.get(randomPresent),majorArcanapresent.get(randomPresent));
                 b.showkartu();
                 lihat--;
                 
                 break;
             case 3:
-                int rrran=r.nextInt(22);
+                int randomFuture;
+                do {
+                    randomFuture = r.nextInt(22);
+                }while (used.contains(randomFuture));
+                used.add(randomFuture);
                 System.out.println("MASA DEPAN MU MENGATAKAN");
-                artitarot c= new artitarot(NAMAARCANA.get(rrran),majorArcanapast.get(rrran));
+                artitarot c= new artitarot(NAMAARCANA.get(randomFuture),majorArcanafuture.get(randomFuture));
                 c.showkartu();
                 lihat--;
 
+                break;
             default:
+                System.out.println("Pilihan tidak valid");
                 break;
         }
             
     }while (lihat !=0); 
-    System.out.println("HEHEHE BAGAIMANA ? SETERAH PADAMU UNTUK PERCAYA ATAU TIDAK");
+    System.out.println("MWEHEHEHE BAGAIMANA ? TERSERAH PADAMU UNTUK PERCAYA ATAU TIDAK");
         
    
   
