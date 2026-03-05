@@ -198,7 +198,6 @@ public class main {
         majorArcanafuture.add("kesempatan kedua yang akan mengetuk pintumu"); // JUDGEMENT REVERSED
         majorArcanafuture.add("perjalanan yang akhirnya selesai meski tertunda"); // THE WORLD REVERSED    
         Random r= new Random();
-        Random r = new Random();
          
         int satu = 1;
         int dua = 1;
