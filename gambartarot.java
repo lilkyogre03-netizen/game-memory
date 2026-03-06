@@ -75,6 +75,72 @@ public class gambartarot extends tarot {
         case "THE WORLD":
             System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
             break;
+         case "THE FOOL REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "THE MAGICIAN REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "THE HIGH PRIESTES REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+       case "THE EMPRESS REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "THE EMPEROR REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+         case "THE HIEROPHANT REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "THE LOVERS REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "THE CHARIOT REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+       case "THE STRENGHT REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "THE HERMIT REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+         case "WHEEL OF FORTUNE REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "JUSTICE REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "THE HANGED MAN REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+       case "DEATH REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "TEMPERANCE REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+         case "THE DEVIL REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "THE TOWER REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "THE STAR REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+       case "THE MOON REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "THE SUN REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "JUDGEMENT REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
+        case "THE WORLD REVERSED":
+            System.out.println(" ||| gambar kartu"+" "+namakartu+"|||");
+            break;
         
        
         default:
