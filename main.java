@@ -6,11 +6,17 @@ import java.util.ArrayList;
 public class main {
     public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
+
+        ArrayList<String> NAMAARCANA = new ArrayList<>();
+        ArrayList<String> majorArcanapast = new ArrayList<>();
+        ArrayList<String> majorArcanapresent = new ArrayList<>();
+        ArrayList<String> majorArcanafuture = new ArrayList<>();
  
         ArrayList<Integer> used = new ArrayList<>();
        
         
         Random r= new Random();
+        
          
         int satu = 1;
         int dua = 1;
@@ -60,6 +66,7 @@ public class main {
                 artitarot b= new artitarot(qq.nama(randomPresent),pp.nama(randomPresent));
                 gg.showkartu();
                 b.showkartu();
+               
                 dua--;
                 
                 break;
