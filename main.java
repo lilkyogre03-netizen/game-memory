@@ -198,6 +198,7 @@ public class main {
         majorArcanafuture.add("kesempatan kedua yang akan mengetuk pintumu"); // JUDGEMENT REVERSED
         majorArcanafuture.add("perjalanan yang akhirnya selesai meski tertunda"); // THE WORLD REVERSED    
         Random r= new Random();
+        
          
         int satu = 1;
         int dua = 1;
@@ -222,6 +223,9 @@ public class main {
                 used.add(randomPast);
                 System.out.println("MASA LALU MU MENGATAKAN :");
                 artitarot a= new artitarot(NAMAARCANA.get(randomPast),majorArcanapast.get(randomPast));
+                gambartarot aa=new gambartarot(NAMAARCANA.get(randomPast));
+                aa.showkartu();
+                System.out.println("====================");
                 a.showkartu();
                 satu--;
                 
@@ -238,7 +242,11 @@ public class main {
                 used.add(randomPresent);
                 System.out.println("MASA KINI MU MENGATAKAN");
                 artitarot b= new artitarot(NAMAARCANA.get(randomPresent),majorArcanapresent.get(randomPresent));
+                gambartarot bb=new gambartarot(NAMAARCANA.get(randomPresent));
+                bb.showkartu();
+                System.out.println("==================");
                 b.showkartu();
+               
                 dua--;
                 
                 break;
@@ -254,6 +262,9 @@ public class main {
                 used.add(randomFuture);
                 System.out.println("MASA DEPAN MU MENGATAKAN");
                 artitarot c= new artitarot(NAMAARCANA.get(randomFuture),majorArcanafuture.get(randomFuture));
+                gambartarot cc=new gambartarot(NAMAARCANA.get(randomFuture));
+                cc.showkartu();
+                System.out.println("===================");
                 c.showkartu();
                 tiga--;
 
