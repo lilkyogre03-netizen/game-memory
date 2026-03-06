@@ -7,11 +7,7 @@ public class main {
     public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
 
-        ArrayList<String> NAMAARCANA = new ArrayList<>();
-        ArrayList<String> majorArcanapast = new ArrayList<>();
-        ArrayList<String> majorArcanapresent = new ArrayList<>();
-        ArrayList<String> majorArcanafuture = new ArrayList<>();
- 
+      
         ArrayList<Integer> used = new ArrayList<>();
        
         
