@@ -9,14 +9,12 @@ public class CollisionChecker {
         this.gp = gp;
     }
 
-    // FIX: Helper baru — dulu tidak ada validasi batas sama sekali.
-    // Mencegah ArrayIndexOutOfBoundsException jika entity berada di tepi peta.
+    
     private boolean isValidTile(int col, int row) {
         return col >= 0 && col < gp.maxWorldCol && row >= 0 && row < gp.maxWorldRow;
     }
 
-    // FIX: Helper baru — cek collision tile dengan aman.
-    // Posisi di luar batas peta dianggap dinding (collision = true).
+    
     private boolean hasTileCollision(int col, int row) {
         if (!isValidTile(col, row)) {
             return true; // Di luar batas = dinding
@@ -41,8 +39,7 @@ public class CollisionChecker {
 
         switch (entity.direction) {
             case "up":
-                // FIX: Dulu langsung gp.tileM.mapTileNum[col][row] tanpa cek batas.
-                // Jika entityTopRow - speed = -1, langsung ArrayIndexOutOfBoundsException.
+                
                 entityTopRow = (entityTopWorldY - entity.speed) / gp.tileSize;
                 if (hasTileCollision(entityLeftCol, entityTopRow) ||
                     hasTileCollision(entityRightCol, entityTopRow)) {
