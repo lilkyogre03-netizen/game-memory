@@ -338,9 +338,9 @@ public class UI extends JPanel implements Runnable {
         }
 
         // Kotak input
-        int boxWidth = 400, boxHeight = 60;
+       int boxWidth = 300, boxHeight = 50;
         int boxX = (screenWidth - boxWidth) / 2;
-        int boxY = screenHeight / 2 + 20;
+        int boxY = screenHeight / 2;
 
         g2.setColor(new Color(0, 0, 0, 180));
         g2.fillRoundRect(boxX, boxY, boxWidth, boxHeight, 15, 15);
