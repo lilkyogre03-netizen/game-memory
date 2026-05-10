@@ -368,8 +368,8 @@ public class UI extends JPanel implements Runnable {
         g2.drawRoundRect(40, 40, screenWidth - 80, screenHeight - 80, 25, 25);
 
         if (tarotPhase == TAROT_CHOOSE_TIME) {
-            g2.setFont(g2.getFont().deriveFont(Font.BOLD, 20f));
-            g2.drawString("Which path do you seek?", 250, 150);
+            g2.setFont(g2.getFont().deriveFont(Font.BOLD, 20f)); 
+            g2.drawString(playerName + ", which path do you seek?", 250, 150);
             for (int i = 0; i < 3; i++) {
                 Rectangle r = getTarotTimeOptionRect(i);
                 g2.setColor(new Color(50, 50, 90)); g2.fill(r);
