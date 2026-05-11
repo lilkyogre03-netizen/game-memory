@@ -16,7 +16,7 @@ public void setObject() {
 }
 public void setNPC() {
     gp.NPC[0] = new npcc(gp);
-    gp.NPC[0].worldX = gp.tileSize*5;
+    gp.NPC[0].worldX = gp.tileSize*8;
     gp.NPC[0].worldY = gp.tileSize*3;
 
 }
